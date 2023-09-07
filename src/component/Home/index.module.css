@@ -1,0 +1,132 @@
+:local(.scoped) { 
+  .home-container {
+    @apply flex items-stretch;
+
+
+    ._home-container-left,
+    ._home-container-right {
+      @apply w-1/2 box-border;
+      height: calc(100vh - 60px);
+    }
+
+    ._home-container-left {
+      @apply flex items-center justify-center box-border;
+      padding: 50px;
+
+      .rv-typography--l1 {
+        font-size: 72px;
+        line-height: 1em;
+      }
+    }
+
+    ._home-container-right {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    ._home-container-right-content {
+      width: 826px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 40px;
+      flex: none;
+    }
+
+    .rv-image img {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+
+  ._home-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px, rgba(0, 0, 0, 0.04) 0px 10px 10px;;
+    background: linear-gradient(135deg, #f1ae3d 10%, #f1ae3d 100%);
+    .rv-button--plain {
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+
+  ._home-music-card {
+    background-color: var(--rv-page-home-component-bg);
+    border: 1px solid var(--mdoc-border-color);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  ._home-button-group {
+    width: 100%;
+  }
+
+  ._home-tabs {
+    --rv-tabs-nav-background-color: #f1ae3d;
+    --rv-tab-active-text-color: #fff;
+    --rv-tab-text-color: #c2e0ff;
+    --rv-tabs-bottom-bar-color: #fff;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px, rgba(0, 0, 0, 0.04) 0px 10px 10px;;
+  }
+
+  ._home-calendar {
+    --rv-calendar-selected-day-background-color: #f1ae3d;
+    height: 380px !important;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  ._home-steps {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--rv-page-home-component-bg);
+    border: 1px solid var(--mdoc-border-color);
+    border-radius: 10px;
+
+    ._home-steps-count {
+      color: #f1ae3d;;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: rgb(240, 247, 255);
+    }
+  }
+
+  ._home-slider {
+    ._home-box {
+      height: 214px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  ._home-steps-primary-color {
+    color: #f1ae3d;;
+  }
+  .typography-text {
+    color: #f1ae3d !important;
+  }
+  .rv-button--primary {
+    background: #f1ae3d;
+    border: 1px solid #f1ae3d;
+  }
+  .rv-button-group--primary {
+    border: 1px solid #f1ae3d;
+  }
+  .rv-button--plain {
+    .rv-button__text {
+      color: #c2e0ff;
+    }
+  }
+  .rv-switch--on {
+    background: #f1ae3d;
+  }
+  .rv-checkbox__icon--checked {
+    .rv-icon {
+      background: #f1ae3d;
+      border: 1px solid #f1ae3d;
+    }
+  }
+}
